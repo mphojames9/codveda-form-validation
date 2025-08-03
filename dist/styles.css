@@ -1,94 +1,96 @@
  body {
-      font-family: Arial, sans-serif;
-      background-image: url("./images/capture.png");
-      background-size: 100%;
-      background-position: fixed;
-      background-repeat: no-repeat;
-      padding: 40px;
-      display: flex;
-      justify-content: center;
-      height:100hv ;
-    }
+     font-family: Arial, sans-serif;
+     background-image: url("./images/capture.png");
+     display: flex;
+     justify-content: center;
+     background-size: cover;
+     background-position: center;     /* Scales the image to cover the entire background */
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     margin: 0;
+     padding: 10em 0;
+ }
 
-    .form-container {
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      max-width: 400px;
-      width: 100%;
-    }
+ .form-container {
+     background: #fff;
+     padding: 30px;
+     border-radius: 10px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+     max-width: 400px;
+     width: 100%;
 
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #333;
-    }
+ }
 
-    .form-group {
-      margin-bottom: 15px;
-      position: relative;
-    }
+ h2 {
+     text-align: center;
+     margin-bottom: 20px;
+     color: #333;
+ }
 
-    label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-      color: #444;
-    }
+ .form-group {
+     margin-bottom: 15px;
+     position: relative;
+ }
 
-    input {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 1rem;
-      transition: border-color 0.3s;
-    }
+ label {
+     display: block;
+     margin-bottom: 5px;
+     font-weight: bold;
+     color: #444;
+ }
 
-    input:focus {
-      outline: none;
-      border-color: #4a90e2;
-      background-color: #f0f8ff;
-    }
+ input {
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 6px;
+     font-size: 1rem;
+     transition: border-color 0.3s;
+ }
 
-    .toggle-password {
-      position: absolute;
-      right: 10px;
-      top: 36px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      color: #4a90e2;
-      font-size: 0.9rem;
-    }
+ input:focus {
+     outline: none;
+     border-color: #4a90e2;
+     background-color: #f0f8ff;
+ }
 
-    .error-message {
-      color: red;
-      font-size: 0.85rem;
-      margin-top: 5px;
-      display: none;
-    }
+ .toggle-password {
+     position: absolute;
+     right: 10px;
+     top: 36px;
+     background: none;
+     border: none;
+     cursor: pointer;
+     color: #4a90e2;
+     font-size: 0.9rem;
+ }
 
-    .success-message {
-      color: green;
-      text-align: center;
-      margin-top: 15px;
-      font-weight: bold;
-    }
+ .error-message {
+     color: red;
+     font-size: 0.85rem;
+     margin-top: 5px;
+     display: none;
+ }
 
-    button[type="submit"] {
-      width: 100%;
-      padding: 12px;
-      background: #ff0077;
-      color: #fff;
-      border: none;
-      border-radius: 6px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
+ .success-message {
+     color: green;
+     text-align: center;
+     margin-top: 15px;
+     font-weight: bold;
+ }
 
-    button[type="submit"]:hover {
-      background: #d30ca1;
-    }
+ button[type="submit"] {
+     width: 100%;
+     padding: 12px;
+     background: #ff0077;
+     color: #fff;
+     border: none;
+     border-radius: 6px;
+     font-size: 1rem;
+     cursor: pointer;
+     transition: background 0.3s;
+ }
+
+ button[type="submit"]:hover {
+     background: #d30ca1;
+ }
