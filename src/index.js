@@ -1,5 +1,6 @@
  const formContainer = document.getElementById("formContainer");
     const showFormBtn = document.getElementById("showFormBtn");
+    const closeFormBtn = document.querySelector(".close-btn");
     const backgroundImage = document.getElementById("backgroundImage");
 
     function toggleVisibility(id) {
@@ -14,12 +15,14 @@
       }
     }
 
+    closeFormBtn.addEventListener("click", closeForm)
     function closeForm() {
       formContainer.style.display = "none";
       showFormBtn.style.display = "block";
       backgroundImage.classList.remove("blurred");
     }
 
+    showFormBtn.addEventListener("click", showForm);
     function showForm() {
       formContainer.style.display = "block";
       showFormBtn.style.display = "none";
